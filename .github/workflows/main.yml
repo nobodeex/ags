@@ -1,0 +1,18 @@
+            - name: copr-build
+  # You may pin to the exact commit or the version.
+  # uses: akdev1l/copr-build@aae8c96d8cce692e8d31c6a3312989c039b983d6
+  uses: akdev1l/copr-build@v1.0.2
+  with:
+    # COPR Project Name
+    project-name: # optional, default is ${{ github.repository_owner }}
+    # Package name in COPR
+    package-name: # optional, default is ${{ github.event.repository.name }}
+    # git remote URL
+    git-remote: # optional, default is https://github.com/${{ github.repository_owner }}/${{ github.event.repository.name }}.git
+    # COPR owner
+    owner: fenham
+    # Comittish for COPR to track
+    committish: # optional, default is main
+  env:
+    COPR_API_TOKEN_CONFIG: kcfpzbugnlglsgtnxrrxwohaxiuuzk
+          
